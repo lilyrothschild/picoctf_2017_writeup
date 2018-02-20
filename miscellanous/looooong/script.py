@@ -8,7 +8,7 @@ import socket
 
 # Open socket
 s = socket.socket()
-s.connect(("shell2017.picoctf.com", 30277))
+s.connect(("shell2017.picoctf.com", 59858)
 
 # Receive initial instructions
 instructions = s.recv(4096).decode("utf-8")
@@ -27,3 +27,6 @@ s.send(reply.encode("utf-8"))
 
 # Receive reply to reply
 print(s.recv(4096).decode("utf-8"))
+
+      
+          
